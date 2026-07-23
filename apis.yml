@@ -1,7 +1,27 @@
 aid: aethero
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aethero.png
 name: Aethero
-description: Aethero is a company surfaced as a portfolio company of kindred-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Aethero designs and manufactures radiation-hardened, space-rated edge
+  computing systems and AI/ML software for satellites, space stations, and orbital
+  data centers, enabling autonomous on-orbit processing of imagery and sensor data
+  rather than downlinking raw feeds. Its NVIDIA Jetson Orin/Thor-based NxN-ECM and
+  NxA-ECM edge computing modules, Titan and Phobos platforms, the Aether fleet-management
+  software framework, and the AMATDT model annotation/training/deployment tool let
+  spacecraft run AI inference in orbit. Founded in 2023 and headquartered in San
+  Francisco, Aethero raised an $8.4M seed round led by Kindred Ventures in June 2025.
+  Aethero exposes no public web API today; this profile captures the company's
+  identity and its live domain-security posture for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/aethero/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Space
+- Edge Computing
+- Satellites
+- Artificial Intelligence
+- Machine Learning
+- Aerospace
+- Defense
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +50,13 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://aethero.com/
+  url: https://www.aethero.com/
+- type: Blog
+  url: https://www.aethero.com/news/
+- type: DomainSecurity
+  url: security/aethero-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
