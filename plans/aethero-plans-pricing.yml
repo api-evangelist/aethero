@@ -1,0 +1,51 @@
+generated: '2026-09-12'
+method: searched
+source: https://www.aethero.com/altus/
+name: Aethero Altus plans and pricing
+note: >-
+  Aethero publishes pricing for exactly one product line — Altus, its orbital compute service — on the
+  public Altus page. The hardware (NxA-ECM, NxN-ECM, 0x1-ECM) and the platforms (Titan, Phobos) carry no
+  published price. There is no self-serve signup, no API-metered price list, and no machine-readable
+  pricing endpoint; the tiers below are read verbatim from the Altus page prose.
+plan_count: 4
+currency: USD
+self_serve: false
+pricing_page: https://www.aethero.com/altus/
+plans:
+- name: Altus Core — Basic
+  product: Altus Core (CaaS)
+  model: Compute-as-a-Service, multi-tenant shared infrastructure
+  price: '750'
+  currency: USD
+  unit: per hour
+  billing_period: monthly
+  note: Published as "$750 per hour minimum" on a monthly commitment.
+- name: Altus Core — Basic (annual)
+  product: Altus Core (CaaS)
+  model: Compute-as-a-Service, multi-tenant shared infrastructure
+  price: '1000000'
+  currency: USD
+  billing_period: annual
+  note: Published as "$1,000,000 per year" for an annual commitment.
+- name: Altus Core — Intelligence
+  product: Altus Core (CaaS)
+  model: Dedicated resources on the shared constellation
+  price: null
+  billing_period: null
+  note: Custom pricing; no public figure published.
+- name: Altus Prime
+  product: Altus Prime (PaaS)
+  model: Single-tenant dedicated spacecraft / sovereign cloud
+  price: null
+  billing_period: null
+  note: Priced by request; no public figure published.
+included_capabilities:
+- On-demand AI inference and model training at the data source
+- Multi-modal sensor fusion and real-time on-orbit processing
+- Kubernetes-compatible containerized workload orchestration
+- Over-the-air deployment of customer containers to spacecraft
+- Zero-trust encryption and tenant data isolation
+gaps:
+- No published per-API-call or per-request pricing.
+- No free tier, trial, or sandbox tier published.
+- Hardware and platform pricing is not published at all.

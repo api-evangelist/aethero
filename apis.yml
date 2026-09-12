@@ -23,16 +23,7 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aethero.png
 name: Aethero
-description: Aethero designs and manufactures radiation-hardened, space-rated edge
-  computing systems and AI/ML software for satellites, space stations, and orbital
-  data centers, enabling autonomous on-orbit processing of imagery and sensor data
-  rather than downlinking raw feeds. Its NVIDIA Jetson Orin/Thor-based NxN-ECM and
-  NxA-ECM edge computing modules, Titan and Phobos platforms, the Aether fleet-management
-  software framework, and the AMATDT model annotation/training/deployment tool let
-  spacecraft run AI inference in orbit. Founded in 2023 and headquartered in San
-  Francisco, Aethero raised an $8.4M seed round led by Kindred Ventures in June 2025.
-  Aethero exposes no public web API today; this profile captures the company's
-  identity and its live domain-security posture for the API Evangelist network.
+description: Aethero designs and manufactures radiation-hardened, space-rated edge computing systems and AI/ML software for satellites, space stations, and orbital data centers, enabling autonomous on-orbit processing of imagery and sensor data rather than downlinking raw feeds. Its NVIDIA Jetson Orin/Thor-based NxN-ECM and NxA-ECM edge computing modules, Titan and Phobos platforms, the Aether fleet-management software framework, and the AMATDT model annotation/training/deployment tool let spacecraft run AI inference in orbit. Founded in 2023 and headquartered in San Francisco, Aethero raised an $8.4M seed round led by Kindred Ventures in June 2025. Aethero exposes no public web API today; this profile captures the company's identity and its live domain-security posture for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/aethero/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -63,13 +54,71 @@ tags_raw:
 - Aerospace
 - Defense
 - Hardware
-apis: []
+apis:
+- aid: aetherospace:aether-rdfm
+  name: Aether Fleet Management (RDFM)
+  description: 'The authenticated fleet-management and over-the-air update API behind Aethero''s "Aether" user portal at cloud.aethero.com. The service is a self-hosted deployment of RDFM (Remote Device Fleet Manager), the Apache-2.0 open-source framework Antmicro implemented on Aethero''s user portal under the two companies'' July 2024 partnership — so the endpoint and the deployment are Aethero''s, while the API CONTRACT is Antmicro''s upstream RDFM project and is not authored or published by Aethero. Probed 2026-09-12: /api/v1/devices, /api/v1/groups and /api/v1/packages all return HTTP 401 {"error":"no Authorization header was provided"} — a real, live, token-gated API with no anonymous reference and no machine-readable contract published on any Aethero host.'
+  image: https://www.aethero.com/wp-content/uploads/2026/03/Aethero_Logo_Square_Black.jpg
+  humanURL: https://cloud.aethero.com/
+  baseURL: https://cloud.aethero.com/api/v1
+  x-operator: vendor-contract-self-hosted
+  x-contract-owner: Antmicro RDFM (open source, Apache-2.0) — not authored by Aethero
+  x-probe:
+    fetched: '2026-09-12'
+    url: https://cloud.aethero.com/api/v1/devices
+    http_status: 401
+    body: '{"error":"no Authorization header was provided"}'
+  tags:
+  - Device Management
+  - Fleet Management
+  - OTA Updates
+  properties:
+  - type: Website
+    url: https://cloud.aethero.com/
+  - type: Press
+    url: https://www.aethero.com/news/press-release-antmicro-partnership/
+- aid: aetherospace:amatdt
+  name: AMATDT API
+  description: 'The backend API of AMATDT, Aethero''s first-party model annotation, training and deployment tool, served at amatdt.aethero.com/api by a NestJS application. Probed 2026-09-12: https://amatdt.aethero.com/api/ returns HTTP 401 {"message":"Unauthorized","statusCode":401}, and every Swagger/OpenAPI path a NestJS app would expose (/api/docs, /api/docs-json, /api/swagger-json, /api/openapi.json) returns a JSON 404 from the application itself, so no specification is published. Customer-only: there is no anonymous reference.'
+  image: https://www.aethero.com/wp-content/uploads/2026/03/Aethero_Logo_Square_Black.jpg
+  humanURL: https://amatdt.aethero.com/
+  baseURL: https://amatdt.aethero.com/api
+  x-probe:
+    fetched: '2026-09-12'
+    url: https://amatdt.aethero.com/api/
+    http_status: 401
+    body: '{"message":"Unauthorized","statusCode":401}'
+  tags:
+  - Machine Learning
+  - Model Deployment
+  - Annotation
+  properties:
+  - type: Website
+    url: https://amatdt.aethero.com/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Pricing
+  url: https://www.aethero.com/altus/
+- type: BlogRSS
+  url: https://www.aethero.com/feed/
+- type: GitHubOrganization
+  url: https://github.com/Aethero-ECM
+- type: Twitter
+  url: https://x.com/AetheroSpace
+- type: LinkedIn
+  url: https://www.linkedin.com/company/aethero/
+- type: SecondaryMarket
+  url: https://equityzen.com/company/aetherospace
+- type: Plans
+  url: plans/aethero-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/aethero-rate-limits.yml
+- type: LLMsTxt
+  url: llms/aethero-llms.txt
 - type: Website
   url: https://www.aethero.com/
 - type: Blog

@@ -1,0 +1,28 @@
+generated: '2026-09-12'
+method: searched
+source: https://www.aethero.com/altus/
+name: Aethero rate limits
+limit_count: 0
+note: >-
+  HONEST ZERO. Aethero publishes no rate-limit documentation anywhere on its public surface. There is no
+  developer portal, no API reference and no docs host (docs.aethero.com returns HTTP 400), so no limits,
+  windows, burst allowances or exhaustion status codes are stated. The two live API surfaces
+  (cloud.aethero.com/api/v1 and amatdt.aethero.com/api) reject anonymous callers with HTTP 401 before any
+  rate-limit headers could be observed, so nothing could be probed either. Recorded as a measured absence.
+limits: []
+response_headers:
+  observed: []
+  note: >-
+    No X-RateLimit-*, RateLimit-* or Retry-After headers were present on any anonymous response from
+    www.aethero.com, cloud.aethero.com or amatdt.aethero.com (probed 2026-09-12).
+exhaustion_status: null
+evidence:
+- url: https://cloud.aethero.com/api/v1/devices
+  status: 401
+  note: 401 before any rate-limit signalling; no RateLimit headers returned.
+- url: https://amatdt.aethero.com/api/
+  status: 401
+  note: 401 before any rate-limit signalling; no RateLimit headers returned.
+- url: https://docs.aethero.com/
+  status: 400
+  note: No docs host exists to publish limits on.
