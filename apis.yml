@@ -89,6 +89,10 @@ apis:
     http_status: 401
     body: '{"message":"Unauthorized","statusCode":401}'
   tags:
+  - Machine-Learning
+  - Model Deployment
+  - Annotation
+  tags_raw:
   - Machine Learning
   - Model Deployment
   - Annotation
