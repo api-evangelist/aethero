@@ -40,7 +40,7 @@ tags:
 - Edge Computing
 - Satellite
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - Aerospace
 - Defense
 - Hardware
@@ -54,6 +54,7 @@ tags_raw:
 - Aerospace
 - Defense
 - Hardware
+- Machine-Learning
 apis:
 - aid: aetherospace:aether-rdfm
   name: Aether Fleet Management (RDFM)
@@ -89,13 +90,14 @@ apis:
     http_status: 401
     body: '{"message":"Unauthorized","statusCode":401}'
   tags:
-  - Machine-Learning
+  - Machine Learning
   - Model Deployment
   - Annotation
   tags_raw:
   - Machine Learning
   - Model Deployment
   - Annotation
+  - Machine-Learning
   properties:
   - type: Website
     url: https://amatdt.aethero.com/
