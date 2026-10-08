@@ -49,3 +49,37 @@ gaps:
 - No published per-API-call or per-request pricing.
 - No free tier, trial, or sandbox tier published.
 - Hardware and platform pricing is not published at all.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - hybrid
+  - subscription
+  units:
+  - compute
+  plans:
+  - name: Altus Core — Basic
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods: []
+  - name: Altus Core — Basic (annual)
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Altus Core — Intelligence
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Altus Prime
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
