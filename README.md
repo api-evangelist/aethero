@@ -64,6 +64,99 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Aethero is a company surfaced as a portfolio company of kindred-ventures and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Aethero designs and manufactures radiation-hardened, space-rated edge computing systems and AI/ML software for satellites, space stations, and orbital data centers, enabling autonomous on-orbit processing of imagery and sensor data rather than downlinking raw feeds. Its NVIDIA Jetson Orin/Thor-based NxN-ECM and NxA-ECM edge computing modules, Titan and Phobos platforms, the Aether fleet-management software framework, and the AMATDT model annotation/training/deployment tool let spacecraft run AI inference in orbit. Founded in 2023 and headquartered in San Francisco, Aethero raised an $8.4M seed round led by Kindred Ventures in June 2025. Aethero exposes no public web API today; this profile captures the company's identity and its live domain-security posture for the API Evangelist network.
 
-Backed by: kindred-ventures — https://aethero.com/
+**Areas:** Company · Space · Edge Computing · Satellite · Artificial Intelligence · Machine Learning · Aerospace · Defense · Hardware
+
+## Aethero on APIs.io
+
+Everything profiled for Aethero is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/aethero/](https://apis.io/providers/aethero/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Aether Fleet Management (RDFM)](https://apis.io/apis/aethero/aether-rdfm/) — The authenticated fleet-management and over-the-air update API behind Aethero's "Aether" user portal at cloud.aethero.com. The service is a self-hosted…
+- [AMATDT API](https://apis.io/apis/aethero/amatdt/) — The backend API of AMATDT, Aethero's first-party model annotation, training and deployment tool, served at amatdt.aethero.com/api by a NestJS application.…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Aethero Domain Security](https://apis.io/security/aethero/aethero-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Aethero Plans Pricing](https://apis.io/plans/aethero/aethero-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Aethero Rate Limits](https://apis.io/rate-limits/aethero/aethero-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.aethero.com/)
+- [Pricing](https://www.aethero.com/altus/)
+- [Blog](https://www.aethero.com/news/)
+- [GitHub](https://github.com/Aethero-ECM)
+
+## API Evangelist rating
+
+**Kin Score 14.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 67.0 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 42.1 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/aethero/](https://apis.io/providers/aethero/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Aethero: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/aethero/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
